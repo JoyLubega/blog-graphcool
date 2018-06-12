@@ -1,29 +1,38 @@
-# 1. Create a new draft
+# 1. Create a new Post
 mutation {
-  createDraft(
+  createPost(data: {
     title: "graphql-yoga is awesome"
     content: "It really is!"
-  ) {
+  }) {
     id
     published
   }
 }
 
-# 2. Publish the draft
+# 2. Update title and content of an existing post
 mutation {
-  publish(id: "post_0") {
+  updatePost(
+    where: {
+      id: "__POST_ID__"
+    }
+    data: {
+      title: "New title"
+      content: "New content"
+    }
+  ) {
     id
     title
-    content
     published
   }
 }
+
 
 # 3. Retrieve all posts
 query {
   posts {
     id
     title
+    content
     published
   }
 }

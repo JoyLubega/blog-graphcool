@@ -1,0 +1,2 @@
+endpoint: https://eu1.prisma.sh/namuli-joyce-50d290/blog/dev-blog
+datamodel: datamodel.graphql
