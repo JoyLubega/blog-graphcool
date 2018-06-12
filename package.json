@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JoyLubega/blog-graphcool/issues"
   },
-  "homepage": "https://github.com/JoyLubega/blog-graphcool#readme"
+  "homepage": "https://github.com/JoyLubega/blog-graphcool#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.14.7"
+  }
 }
